@@ -9,11 +9,30 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
+//@Testcontainers
 public class BaseIT {
 	
 	@Autowired
 	protected TestRestTemplate testRestTemplate ;
+	
+	
+	
+	
 		
-
+//	@Container
+//	private static PostgreSQLContainer<?> postgresDB = new PostgreSQLContainer<>(PostgreSQLContainer.IMAGE)
+//																		.withDatabaseName("testdb")
+//																		.withUsername("postgres")
+//																		.withPassword("secret")
+//																		.withInitScript("ddl.sql");
+	
+//	@DynamicPropertySource
+//	public static void properties(DynamicPropertyRegistry registry) {
+//		
+//		registry.add("spring.datasource.url", postgresDB::getJdbcUrl);		
+//		registry.add("spring.datasource.username", postgresDB::getUsername);
+//		registry.add("spring.datasource.password", postgresDB::getPassword);
+//		
+//	}
 
 }

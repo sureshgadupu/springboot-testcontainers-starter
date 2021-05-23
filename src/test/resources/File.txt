@@ -1,0 +1,1 @@
+The first approach to implement dynamic properties is to use a custom ApplicationContextInitializer. Basically, we set up our infrastructure first and use the information from the first step to customize the ApplicationContext:
